@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="How TallyCraft handles your data: what the app collects and why, where it lives, and the controls you have — no ads, no tracking, never sold.">
+  <link rel="canonical" href="https://tallycraft.app/privacy/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <title>TallyCraft — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #ffffff;
+      margin: 0;
+      padding: 1.25rem;
+      -webkit-text-size-adjust: 100%;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 .25rem; }
+    h2 { font-size: 1.3rem; margin: 2.2rem 0 .6rem; padding-top: .4rem; border-top: 1px solid #e6e6e6; }
+    h3 { font-size: 1.08rem; margin: 1.4rem 0 .4rem; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin: .35rem 0; }
+    .effective { color: #555; font-size: .95rem; margin: .25rem 0 1.25rem; }
+    .lede { font-size: 1.05rem; }
+    .promise { background: #f3f7f3; border-left: 4px solid #3a7d44; padding: .8rem 1rem; border-radius: 6px; margin: 1.2rem 0; }
+    .note { background: #fbf6ee; border-left: 4px solid #b8862b; padding: .8rem 1rem; border-radius: 6px; margin: 1rem 0; font-size: .97rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .97rem; }
+    th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #e6e6e6; vertical-align: top; }
+    th { background: #f6f6f6; }
+    code { background: #f0f0f0; padding: .1rem .3rem; border-radius: 4px; font-size: .9em; }
+    a { color: #2563a8; }
+    footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #e6e6e6; color: #555; font-size: .92rem; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #121212; }
+      h2 { border-top-color: #2a2a2a; }
+      .effective, footer { color: #aaa; }
+      .promise { background: #16241a; border-left-color: #4f9d5c; }
+      .note { background: #241f14; border-left-color: #d6a44a; }
+      th { background: #1d1d1d; }
+      th, td, h2, footer { border-color: #2a2a2a; }
+      code { background: #222; }
+      a { color: #6ab0ff; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>TallyCraft — Privacy Policy</h1>
+  <p class="effective"><strong>Effective date: August 10, 2026</strong></p>
+
+  <h2>Who we are, and what this covers</h2>
+  <p class="lede">TallyCraft is an iPhone app for solo mobile-trade operators — landscapers, cleaners, detailers, and the like. It quietly notices when you stop to work during the day, lets you confirm those stops each evening, and keeps the record of your jobs, what they're worth, and who hasn't paid yet. Think of it as your notebook, automated.</p>
+  <p>This policy explains exactly what the app collects, why, where it lives, and the choices you have. It covers the TallyCraft iOS app (bundle id <code>com.kevinlam.TallyCraft</code>) and the cloud account that backs it up.</p>
+  <p>The app is operated by <strong>Kevin Lam</strong> ("we," "us," "TallyCraft"). If anything here is unclear, email us at <a href="mailto:support@tallycraft.app">support@tallycraft.app</a> — a real person reads it.</p>
+  <div class="promise"><strong>Our promise in one line:</strong> we use your data only to run the app for you. We do not sell it, we do not use it for advertising, and we do not let anyone track you across apps.</div>
+
+  <h2>What we collect, and why</h2>
+  <p>We try to collect as little as possible, and only what the app actually needs to do its job. Here is everything.</p>
+
+  <h3>Your location — to notice when you stop to work</h3>
+  <p>The whole point of the app is that it sees where you pull up and work, so your evening review is one tap instead of a typed log.</p>
+  <ul>
+    <li><strong>While you're using the app (foreground):</strong> we read your precise location so we can show you the weather and recognize a stop.</li>
+    <li><strong>In the background / "Always" (when you turn it on):</strong> we record your work stops even when the app is closed. This is the passive-capture "magic" — and you have to allow it for that to work. iOS shows a location-arrow indicator in the status bar when your location is being used, and you can always see which apps recently used your location in Settings → Privacy &amp; Security → Location Services.</li>
+  </ul>
+  <p>Your location history is <strong>your own movements</strong> — where you, the operator, drove and stopped. We store each detected stop as a coordinate, the time you arrived and left, how confident we are that it was a real work stop, and (where available) the street address. We do this only to build your own work record. We never share or sell it.</p>
+  <p>You can grant only "While Using," or turn location off entirely, in iOS Settings — see "Your choices" below. The app keeps working with whatever you allow; passive capture just won't run without "Always."</p>
+
+  <h3>Motion &amp; Activity — to tell a work stop from a red light (optional)</h3>
+  <p>With your permission, we read iOS's Motion &amp; Activity data (the same "are you walking / driving / still" signal your phone already computes). We use it for two things:</p>
+  <ul>
+    <li>To tell a real work stop apart from sitting at a traffic light, so we don't log junk.</li>
+    <li>To power a "tracking health" warning — if your phone has been moving around all day but our recorder went quiet, we can tell you that tracking may have paused, instead of you finding out later that a day went unrecorded.</li>
+  </ul>
+  <p><strong>This permission is optional. The app works without it</strong> — you'll just get slightly less precise stop detection and a less reliable health warning. You can turn it off any time in iOS Settings.</p>
+  <p><strong>Motion data stays on your device.</strong> It is read and used locally only — never uploaded to our servers or stored in your cloud account.</p>
+
+  <h3>Your account identity — Sign in with Apple</h3>
+  <p>We use <strong>Sign in with Apple</strong> to create your account. When you sign in, Apple asks whether you want to share your <strong>name and email</strong> with us — that choice is yours, and you can use Apple's "Hide My Email" to share a private relay address instead of your real one. Apple sends us a secure token that identifies your account; your account and all your records are tied to that identity so they sync to your other devices and so only you can see them.</p>
+  <p>We do not get your Apple password, and we never see it.</p>
+
+  <h3>The business records you enter — including your customers' details</h3>
+  <p>This is the data you type in to run your business:</p>
+  <ul>
+    <li><strong>Customers</strong> — name (required), and optionally address (and, where the app matched the job to a spot on-site, its approximate map coordinates), phone number, a default service, and a default price.</li>
+    <li><strong>Jobs</strong> — the service, the price, whether it's confirmed, whether it's paid, notes, and reminder history.</li>
+    <li><strong>Stops</strong> — the work stops described above.</li>
+  </ul>
+  <p><strong>Important — these records often include other people's information.</strong> A customer's name, phone number, and home address are <em>your customers'</em> personal details, not yours. You are entering them, and <strong>you are responsible for having a proper basis to store them</strong> (for example, because they're your customer and you do business with them). We store this data on your behalf, as your processor, so the app can power one-tap confirmation, show you what's owed, and let you send a payment reminder. The phone number is used for one thing only: the reminder you choose to send (see "How we use it").</p>
+
+  <h3>Weather and address lookups sent to Apple</h3>
+  <p>To make the app pleasant and useful, two small lookups go to Apple:</p>
+  <ul>
+    <li><strong>Weather (Apple WeatherKit):</strong> we send your current location to Apple's WeatherKit service to get the current conditions and temperature, which power the weather "hero" scene on your main screen. This is a free, cosmetic touch.</li>
+    <li><strong>Address (Apple MapKit):</strong> when we detect a stop, we send that stop's coordinate to Apple's MapKit reverse-geocoding service to turn it into a human-readable street address for your review card. This is convenience only — your records are matched by coordinate and time, not by the address text, so the app still works if the lookup fails (offline, rural areas, etc.).</li>
+  </ul>
+  <p>We don't get anything <em>back about you</em> from these lookups beyond the weather and the address — they're standard Apple device services.</p>
+
+  <h3>What we do NOT collect</h3>
+  <p>We want to be just as clear about what we don't do:</p>
+  <ul>
+    <li><strong>No analytics or tracking SDKs.</strong> The app contains no analytics, ad, crash-reporting, or marketing toolkits. (Our only third-party code library is the one that talks to our own backend.)</li>
+    <li><strong>No advertising identifiers, no IDFA, no App Tracking Transparency prompt</strong> — because we don't track you across other apps or websites.</li>
+    <li><strong>No data brokers. No selling. No ad targeting.</strong></li>
+  </ul>
+
+  <h2>How we use your information</h2>
+  <p>We use your data <strong>only to provide the app to you</strong>:</p>
+  <ul>
+    <li>To detect and record your work stops and build your own job/customer records.</li>
+    <li>To show your evening review, your history, your reports, and what's owed.</li>
+    <li>To draw the weather scene on your main screen.</li>
+    <li>To back up your records to your account and sync them across your own devices.</li>
+    <li>To send a payment reminder <strong>through your own iPhone's Messages app</strong> — see below.</li>
+  </ul>
+
+  <h3>Reminders go from <em>your</em> phone — we never message anyone for you</h3>
+  <p>When you choose to remind a customer about an unpaid job, TallyCraft prefills your iPhone's built-in <strong>Messages</strong> app with the text and the customer's number, and <strong>you tap Send yourself</strong>. The message goes from your own phone number, like any text you send. <strong>We do not run any messaging service, we never send messages on your behalf, and the text never passes through our servers.</strong></p>
+
+  <h3>There is no payment system</h3>
+  <p>TallyCraft records whether a job is paid or unpaid — that's it. <strong>We do not process payments and we run no payment rail.</strong> You collect however you already do (Zelle, Venmo, Stripe, cash, check). We never touch the money.</p>
+
+  <h2>Where your data lives, and how it's protected</h2>
+  <ul>
+    <li><strong>On your phone:</strong> the app keeps a local, offline-first copy of your records (using Apple's SwiftData) so it works with no signal and syncs when you're back online.</li>
+    <li><strong>In the cloud:</strong> your records are backed up to our hosted database, <strong>Supabase</strong> (PostgreSQL), which is the synced source of truth across your devices. Our cloud is hosted in <strong>the United States (AWS us-west-2, Oregon)</strong>.</li>
+  </ul>
+  <p>Protections we rely on:</p>
+  <ul>
+    <li><strong>Per-user row-level security.</strong> Every record is tagged with your account id, and our database enforces a strict "you can only ever read or write your own rows" rule at the database level. By default, no row is visible to anyone but its owner.</li>
+    <li><strong>Encryption in transit and at rest.</strong> Traffic between the app and our cloud is encrypted (HTTPS/TLS), and the data stored in our cloud is encrypted at rest. These protections are provided by the Supabase platform that hosts our database.</li>
+    <li>We keep the administrative ("master") key to the database out of the app entirely; the app only ever holds a limited key whose access is governed by the per-user rule above.</li>
+  </ul>
+  <p>No system is perfectly secure, but this is the standard, current bar for a consumer app, and we don't cut corners on it.</p>
+
+  <h2>How long we keep your data</h2>
+  <ul>
+    <li><strong>Location data:</strong> the app does not store a continuous raw GPS trail. The recorder processes raw location updates on your device into discrete <strong>work stops</strong> (a coordinate plus arrival/departure time), and only those stops are saved and synced. Our retention goal is to keep no fine-grained movement data beyond what those stop records require — and, as a further safeguard, to age detailed location precision down after about <strong>30 days</strong>.
+      <div class="note"><em>We want to be honest about exactly where this stands:</em> the 30-day reduction is our stated retention practice and the direction we are building toward; we are still finalizing the automated process that performs it on a schedule. Until that automated reduction is fully in place, your stop records are retained as part of your data and are removed when you delete your account (see below). We will update this policy to confirm once the scheduled reduction is live, and we will not claim an automated deletion that we are not yet performing.</div>
+    </li>
+    <li><strong>Your records:</strong> we keep your customers, jobs, and stops for as long as your account is active, so your history is there when you want it.</li>
+    <li><strong>On deletion:</strong> when you delete your account, your records are removed (see below).</li>
+  </ul>
+
+  <h2>Who else touches your data (third parties)</h2>
+  <p>We keep this list short on purpose. We only use processors we actually need to run the app, and each has a single, specific job.</p>
+  <table>
+    <thead><tr><th>Who</th><th>What they do for us</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Supabase</strong></td><td>Hosts our cloud database and handles sign-in on the backend. This is where your synced records live. Supabase acts as our data processor.</td></tr>
+      <tr><td><strong>Apple — Sign in with Apple</strong></td><td>Authenticates your account (you choose whether to share your name/email; "Hide My Email" is supported).</td></tr>
+      <tr><td><strong>Apple — WeatherKit</strong></td><td>Returns weather for your current location to draw the home-screen scene.</td></tr>
+      <tr><td><strong>Apple — MapKit</strong></td><td>Turns a stop's coordinates into a street address for your review card.</td></tr>
+      <tr><td><strong>Apple — App Store / StoreKit (In-App Purchase)</strong></td><td>Handles your in-app purchases and billing — the Pro subscription and single-report purchases. Apple processes the payment; we receive your purchase/subscription status, not your card details.</td></tr>
+    </tbody>
+  </table>
+  <p><strong>We do not:</strong></p>
+  <ul>
+    <li><strong>sell your personal information,</strong></li>
+    <li><strong>share it for advertising or use it to target ads,</strong></li>
+    <li><strong>allow cross-app or cross-site tracking,</strong> or</li>
+    <li><strong>use any data brokers.</strong></li>
+  </ul>
+  <p>We may disclose data if we're legally required to (a valid court order, for example), or to protect the safety and rights of people, but that's a last resort, not a routine.</p>
+
+  <h2>Your choices and your rights</h2>
+  <p>You're in control of your data. Here's how.</p>
+  <ul>
+    <li><strong>Delete your account — free, from inside the app.</strong> This is our unconditional guarantee: you can always leave and take your data with you. Deleting your account removes your records from your device and signs you out, and triggers a full server-side deletion of your account and all of its records (account, customers, jobs, and stops) from our cloud. <em>This server-side deletion is live and verified — "delete" means delete everywhere.</em></li>
+    <li><strong>Export your recent data — free.</strong> You can export your <strong>last 30 days</strong> of job records (date, customer, service, price, paid status, paid date) as a CSV file anytime, free. To get your <strong>full</strong> history, upgrade to Pro. If you'd like a complete copy of your data and don't want to subscribe, email us at <a href="mailto:support@tallycraft.app">support@tallycraft.app</a> and we'll send it to you at no charge — we never hold your own data hostage.</li>
+    <li><strong>Paid archive (Pro).</strong> Pro subscribers get the full historical export plus computed tax/audit summaries and reports. We sell the <em>packaging and computation</em> of your data and the convenience of the full archive — never the right to leave with it: the free 30-day export above always remains available, and a full copy is free on request (see above).</li>
+    <li><strong>Turn permissions off any time.</strong> You can change or revoke Location ("Always," "While Using," or off) and Motion &amp; Fitness in <strong>iOS Settings → Privacy &amp; Security</strong>, or under TallyCraft's own entry in Settings. <strong>The app degrades gracefully</strong> — turn off "Always" and passive background capture stops, but you can still add and manage jobs by hand; turn off Motion and stop detection is just a bit less precise.</li>
+    <li><strong>Pause for the off-season.</strong> Seasonal operators can switch the app's capture off in the winter and back on in spring from inside the app, with all history preserved. Pausing stops new capture without deleting anything.</li>
+  </ul>
+  <p>If you'd like to ask about the data tied to your account, email <a href="mailto:support@tallycraft.app">support@tallycraft.app</a> and we'll help.</p>
+
+  <h2>Children</h2>
+  <p>TallyCraft is a tool for working adults running a trade. It is <strong>not directed to children</strong>, and we do not knowingly collect personal information from anyone under 13 (or the minimum age in your jurisdiction). If you believe a child has provided us information, contact us at <a href="mailto:support@tallycraft.app">support@tallycraft.app</a> and we'll delete it.</p>
+
+  <h2>State and regional privacy rights</h2>
+  <p><strong>California residents:</strong> We <strong>do not sell</strong> your personal information, and we <strong>do not share</strong> it for cross-context behavioral advertising, as those terms are used under California law (the CCPA/CPRA). You have the right to know what we collect, to access it, to request deletion, and not to be discriminated against for exercising these rights. You can exercise access and deletion directly in the app (export and delete account), or email <a href="mailto:support@tallycraft.app">support@tallycraft.app</a>.</p>
+  <p><strong>Other US states and regions:</strong> Residents of other states with privacy laws (such as Virginia, Colorado, Connecticut, and others), and individuals in regions like the EU/UK where data-protection rules apply, may have similar rights to access, correct, delete, or export their personal data. The in-app export and delete features cover access, portability, and deletion for everyone; for anything else, email <a href="mailto:support@tallycraft.app">support@tallycraft.app</a> and we'll respond. For data you entered about your own customers, you act as the controller of that information and we act as your processor.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we'll post the updated version at <a href="https://tallycraft.app/privacy/">https://tallycraft.app/privacy/</a> and update the "Effective date" at the top. For meaningful changes — especially anything that would expand what we collect or how we use it — we'll make a reasonable effort to let you know in the app before the change takes effect.</p>
+
+  <h2>Contact us</h2>
+  <p>Questions, requests, or concerns about privacy?</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:support@tallycraft.app">support@tallycraft.app</a></li>
+    <li><strong>Support:</strong> <a href="https://tallycraft.app/">https://tallycraft.app/</a></li>
+    <li><strong>Operated by:</strong> Kevin Lam</li>
+  </ul>
+
+  <footer>
+    <p>This policy is governed by the laws of Colorado, United States, without regard to conflict-of-laws rules.</p>
+    <p><a href="/">TallyCraft home &amp; support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
